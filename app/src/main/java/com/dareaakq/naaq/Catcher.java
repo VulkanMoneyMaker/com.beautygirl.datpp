@@ -1,4 +1,4 @@
-package com.beautygirl.datpp;
+package com.dareaakq.naaq;
 
 public abstract class Catcher<T> implements Plur {
 

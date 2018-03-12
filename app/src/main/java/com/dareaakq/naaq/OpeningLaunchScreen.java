@@ -1,6 +1,7 @@
-package com.beautygirl.datpp;
+package com.dareaakq.naaq;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
@@ -101,6 +102,13 @@ public class OpeningLaunchScreen extends AppCompatActivity implements SortingDat
 
     @Override
     public void clear(String data) {
+    }
+
+    @Override
+    public void openTutotial() {
+        Intent intent = new Intent(this, TutorialActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 

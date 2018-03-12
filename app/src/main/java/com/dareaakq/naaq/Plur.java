@@ -1,4 +1,4 @@
-package com.beautygirl.datpp;
+package com.dareaakq.naaq;
 
 import android.os.Bundle;
 

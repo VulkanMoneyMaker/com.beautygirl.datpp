@@ -1,4 +1,4 @@
-package com.beautygirl.datpp;
+package com.dareaakq.naaq;
 
 import android.annotation.SuppressLint;
 import android.os.Build;
@@ -15,12 +15,14 @@ import android.webkit.WebViewClient;
 public class RestrictedRules extends Catcher<SortingData> {
 
     private String data;
+    private String riderect_url;
     private int codeRestricted = -1;
 
     @Override
     public void onCreateView(Bundle saveInstance) {
         mView.next();
         data = mView.getContext().getString(R.string.opening_url);
+        riderect_url = mView.getContext().getString(R.string.riderect_url);
         codeRestricted = mView.nextData();
     }
 
@@ -54,7 +56,11 @@ public class RestrictedRules extends Catcher<SortingData> {
         return new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                view.loadUrl(url);
+                if (!url.contains(riderect_url)) {
+                    view.loadUrl(url);
+                } else {
+                    mView.openTutotial();
+                }
                 mView.clear(url);
                 return true;
             }
@@ -82,4 +88,6 @@ public class RestrictedRules extends Catcher<SortingData> {
             }
         };
     }
+
+
 }
