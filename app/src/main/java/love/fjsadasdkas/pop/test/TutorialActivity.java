@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
-import com.daetsoooe.naaq.R;
+import love.fjsadasdkas.pop.R;
 import love.fjsadasdkas.pop.tips.FKlfs;
 
 public class TutorialActivity extends AppCompatActivity {

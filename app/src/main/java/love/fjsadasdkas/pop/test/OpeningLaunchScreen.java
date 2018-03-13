@@ -17,8 +17,9 @@ import android.webkit.WebResourceError;
 import android.webkit.WebResourceResponse;
 import android.widget.ProgressBar;
 
-import com.daetsoooe.naaq.R;
 import com.facebook.applinks.AppLinkData;
+
+import love.fjsadasdkas.pop.R;
 
 
 public class OpeningLaunchScreen extends AppCompatActivity implements SortingData {

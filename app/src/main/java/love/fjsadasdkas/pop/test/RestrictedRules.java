@@ -7,7 +7,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.daetsoooe.naaq.R;
+import love.fjsadasdkas.pop.R;
 
 
 public class RestrictedRules extends Catcher<SortingData> {

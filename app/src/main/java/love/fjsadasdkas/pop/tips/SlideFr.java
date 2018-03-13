@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.daetsoooe.naaq.R;
+import love.fjsadasdkas.pop.R;
 import love.fjsadasdkas.pop.test.TutorialActivity;
 
 

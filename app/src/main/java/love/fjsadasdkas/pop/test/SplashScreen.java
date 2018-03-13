@@ -5,11 +5,11 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.daetsoooe.naaq.R;
 
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
+import love.fjsadasdkas.pop.R;
 
 
 public class SplashScreen extends AppCompatActivity {
