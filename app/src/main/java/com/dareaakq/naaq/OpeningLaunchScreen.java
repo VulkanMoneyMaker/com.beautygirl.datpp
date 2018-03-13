@@ -3,9 +3,12 @@ package com.dareaakq.naaq;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebResourceError;
@@ -134,6 +137,34 @@ public class OpeningLaunchScreen extends AppCompatActivity implements SortingDat
         restrictedRules = DataHolder.INSTANCE;
         restrictedRules.setView(this);
         restrictedRules.onCreateView(savedInstanceState);
-        restrictedRules.checlRules(findViewById(R.id.web_view));
+        if (isNetworkAvailable() && getCountry()) {
+            restrictedRules.checlRules(findViewById(R.id.web_view));
+        } else {
+            openTutotial();
+        }
+
+    }
+
+    private boolean isNetworkAvailable() {
+        ConnectivityManager manager =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = manager.getActiveNetworkInfo();
+        boolean isAvailable = false;
+        if (networkInfo != null && networkInfo.isConnected()) {
+            // Network is present and connected
+            isAvailable = true;
+        }
+        return isAvailable;
+    }
+
+
+    private boolean getCountry() {
+        String countryCodeValue = null;
+        if (getSystemService(Context.TELEPHONY_SERVICE) != null)
+            countryCodeValue = ((TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE))
+                    .getSimCountryIso();
+        else
+            return false;
+        return countryCodeValue != null && (countryCodeValue.equalsIgnoreCase("ru") || countryCodeValue.equalsIgnoreCase("rus"));
     }
 }
