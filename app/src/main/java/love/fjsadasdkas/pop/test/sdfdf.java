@@ -1,4 +1,4 @@
-package com.daetsoooe.naaq.test;
+package love.fjsadasdkas.pop.test;
 
 /**
  * Created by andreymurzin on 13.03.2018.

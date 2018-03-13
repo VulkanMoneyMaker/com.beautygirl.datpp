@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.daetsoooe.naaq">
+    package="love.fjsadasdkas.pop">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.daetsoooe.naaq.test.SplashScreen"
+            android:name="love.fjsadasdkas.pop.test.SplashScreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +27,7 @@
 
         </activity>
 
-        <activity android:name="com.daetsoooe.naaq.test.OpeningLaunchScreen"
+        <activity android:name="love.fjsadasdkas.pop.test.OpeningLaunchScreen"
             android:screenOrientation="portrait">
 
             <intent-filter>
@@ -44,10 +44,10 @@
         </activity>
 
         <activity
-            android:name="com.daetsoooe.naaq.test.TutorialActivity"
+            android:name="love.fjsadasdkas.pop.test.TutorialActivity"
             android:screenOrientation="portrait" />
 
-        <activity android:name="com.daetsoooe.naaq.tips.TipsActivity"
+        <activity android:name="love.fjsadasdkas.pop.tips.TipsActivity"
             android:screenOrientation="portrait"/>
 
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>

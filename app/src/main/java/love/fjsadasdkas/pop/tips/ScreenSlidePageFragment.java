@@ -1,4 +1,4 @@
-package com.daetsoooe.naaq.tips;
+package love.fjsadasdkas.pop.tips;
 
 import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.ViewModelStore;
@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.daetsoooe.naaq.R;
-import com.daetsoooe.naaq.test.TutorialActivity;
+import love.fjsadasdkas.pop.test.TutorialActivity;
 
 
 public class ScreenSlidePageFragment extends Fragment {

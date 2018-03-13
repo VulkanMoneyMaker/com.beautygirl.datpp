@@ -1,4 +1,4 @@
-package com.daetsoooe.naaq.test;
+package love.fjsadasdkas.pop.test;
 
 
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.daetsoooe.naaq.R;
-import com.daetsoooe.naaq.tips.TipsActivity;
+import love.fjsadasdkas.pop.tips.TipsActivity;
 
 public class TutorialActivity extends AppCompatActivity {
 

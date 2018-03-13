@@ -1,4 +1,4 @@
-package com.daetsoooe.naaq.tips;
+package love.fjsadasdkas.pop.tips;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

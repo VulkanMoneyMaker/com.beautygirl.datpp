@@ -1,4 +1,4 @@
-package com.daetsoooe.naaq.tips;
+package love.fjsadasdkas.pop.tips;
 
 
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.daetsoooe.naaq.R;
-import com.daetsoooe.naaq.test.TutorialActivity;
+import love.fjsadasdkas.pop.test.TutorialActivity;
 
 
 public class TipsActivity extends FragmentActivity {
