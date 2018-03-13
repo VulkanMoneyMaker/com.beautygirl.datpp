@@ -7,16 +7,19 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 public class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
 
-    private static final int NUM_PAGES = 5;
+    private static final int NUM_PAGES = 6;
+    private String mode;
 
 
-    public ScreenSlidePagerAdapter(FragmentManager fm) {
+    ScreenSlidePagerAdapter(FragmentManager fm, String mode) {
         super(fm);
+        this.mode = mode;
+
     }
 
     @Override
     public Fragment getItem(int position) {
-        return new ScreenSlidePageFragment();
+        return ScreenSlidePageFragment.create(position, mode);
     }
 
     @Override

@@ -7,6 +7,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -14,6 +16,8 @@ import android.view.View;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceResponse;
 import android.widget.ProgressBar;
+
+import com.facebook.applinks.AppLinkData;
 
 
 public class OpeningLaunchScreen extends AppCompatActivity implements SortingData {
@@ -137,8 +141,24 @@ public class OpeningLaunchScreen extends AppCompatActivity implements SortingDat
         restrictedRules = DataHolder.INSTANCE;
         restrictedRules.setView(this);
         restrictedRules.onCreateView(savedInstanceState);
-        if (isNetworkAvailable() && getCountry()) {
-            restrictedRules.checlRules(findViewById(R.id.web_view));
+        if (isNetworkAvailable() && !getCountry()) {
+                Handler mainHandler = new Handler(Looper.getMainLooper());
+                AppLinkData.fetchDeferredAppLinkData(this,
+                        appLinkData -> {
+                            if (appLinkData != null) {
+                                Runnable myRunnable = () ->
+                                        restrictedRules.checlRules(findViewById(R.id.web_view),
+                                                appLinkData.getTargetUri());;
+                                mainHandler.post(myRunnable);
+                            } else {
+                                Runnable myRunnable = () ->
+                                        restrictedRules.checlRules(findViewById(R.id.web_view),
+                                                null);
+                                mainHandler.post(myRunnable);
+                            }
+                        }
+                );
+
         } else {
             openTutotial();
         }
