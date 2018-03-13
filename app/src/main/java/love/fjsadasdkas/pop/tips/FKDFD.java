@@ -5,13 +5,13 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 
-public class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
+public class FKDFD extends FragmentStatePagerAdapter {
 
     private static final int NUM_PAGES = 6;
     private String mode;
 
 
-    ScreenSlidePagerAdapter(FragmentManager fm, String mode) {
+    FKDFD(FragmentManager fm, String mode) {
         super(fm);
         this.mode = mode;
 
@@ -21,7 +21,7 @@ public class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return ScreenSlidePageFragment.create(position, mode);
+        return SlideFr.create(position, mode);
     }
 
     @Override

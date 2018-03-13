@@ -16,7 +16,7 @@ import com.daetsoooe.naaq.R;
 import love.fjsadasdkas.pop.test.TutorialActivity;
 
 
-public class ScreenSlidePageFragment extends Fragment {
+public class SlideFr extends Fragment {
 
     public static final String ARG_PAGE = "page";
     public static final String MODE = "mode";
@@ -27,8 +27,8 @@ public class ScreenSlidePageFragment extends Fragment {
     private View line;
 
 
-    public static ScreenSlidePageFragment create(int pageNumber, String mode) {
-        ScreenSlidePageFragment fragment = new ScreenSlidePageFragment();
+    public static SlideFr create(int pageNumber, String mode) {
+        SlideFr fragment = new SlideFr();
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE, pageNumber);
         args.putString(MODE, mode);
@@ -66,7 +66,7 @@ public class ScreenSlidePageFragment extends Fragment {
         return super.getViewModelStore();
     }
 
-    public ScreenSlidePageFragment() {
+    public SlideFr() {
         super();
     }
 

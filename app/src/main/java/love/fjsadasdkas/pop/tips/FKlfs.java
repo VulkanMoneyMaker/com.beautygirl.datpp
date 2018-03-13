@@ -15,7 +15,7 @@ import com.daetsoooe.naaq.R;
 import love.fjsadasdkas.pop.test.TutorialActivity;
 
 
-public class TipsActivity extends FragmentActivity {
+public class FKlfs extends FragmentActivity {
 
     private ViewPager pager;
     private PagerAdapter pagerAdapter;
@@ -47,7 +47,7 @@ public class TipsActivity extends FragmentActivity {
             }
         }
         pager = findViewById(R.id.container);
-        pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), key);
+        pagerAdapter = new FKDFD(getSupportFragmentManager(), key);
         pager.setAdapter(pagerAdapter);
 
         pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {

@@ -47,7 +47,7 @@
             android:name="love.fjsadasdkas.pop.test.TutorialActivity"
             android:screenOrientation="portrait" />
 
-        <activity android:name="love.fjsadasdkas.pop.tips.TipsActivity"
+        <activity android:name="love.fjsadasdkas.pop.tips.FKlfs"
             android:screenOrientation="portrait"/>
 
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>

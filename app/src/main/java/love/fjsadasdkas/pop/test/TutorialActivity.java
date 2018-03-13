@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.daetsoooe.naaq.R;
-import love.fjsadasdkas.pop.tips.TipsActivity;
+import love.fjsadasdkas.pop.tips.FKlfs;
 
 public class TutorialActivity extends AppCompatActivity {
 
@@ -31,7 +31,7 @@ public class TutorialActivity extends AppCompatActivity {
     }
 
     private void openTips(String value) {
-        Intent intent = new Intent(this, TipsActivity.class);
+        Intent intent = new Intent(this, FKlfs.class);
         intent.putExtra(KEY_HUMAN, value);
         startActivity(intent);
     }
