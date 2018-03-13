@@ -1,23 +1,11 @@
-package com.dareaakq.naaq;
+package com.daetsoooe.naaq;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
-import android.support.annotation.RequiresApi;
-import android.webkit.WebResourceError;
-import android.webkit.WebResourceRequest;
-import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
-import com.facebook.applinks.AppLinkData;
 
 
 public class RestrictedRules extends Catcher<SortingData> {

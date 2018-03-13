@@ -1,4 +1,4 @@
-package com.dareaakq.naaq;
+package com.daetsoooe.naaq;
 
 
 import android.content.Intent;
@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
-import com.dareaakq.naaq.tips.TipsActivity;
+import com.daetsoooe.naaq.tips.TipsActivity;
 
 public class TutorialActivity extends AppCompatActivity {
 

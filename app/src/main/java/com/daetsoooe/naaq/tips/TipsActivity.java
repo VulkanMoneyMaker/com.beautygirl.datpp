@@ -1,4 +1,4 @@
-package com.dareaakq.naaq.tips;
+package com.daetsoooe.naaq.tips;
 
 
 import android.os.Bundle;
@@ -8,10 +8,11 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.dareaakq.naaq.R;
-import com.dareaakq.naaq.TutorialActivity;
+import com.daetsoooe.naaq.R;
+import com.daetsoooe.naaq.TutorialActivity;
 
 
 public class TipsActivity extends FragmentActivity {
@@ -23,6 +24,7 @@ public class TipsActivity extends FragmentActivity {
     private ConstraintLayout constraintLayout;
     private TextView tvTitle;
     private View line;
+    private ImageView imgIcon;
 
 
 
@@ -35,6 +37,7 @@ public class TipsActivity extends FragmentActivity {
         tvTitle = findViewById(R.id.tv_title);
         line = findViewById(R.id.view_line);
         tvNumber = findViewById(R.id.tv_number);
+        imgIcon = findViewById(R.id.imageView2);
         if (getIntent() != null) {
             key = getIntent().getStringExtra(TutorialActivity.KEY_HUMAN);
             if (key.equals(TutorialActivity.BOY_SCREEN)) {
@@ -74,6 +77,7 @@ public class TipsActivity extends FragmentActivity {
         tvTitle.setTextColor(color);
         tvNumber.setTextColor(color);
         line.setBackgroundColor(color);
+        imgIcon.setImageResource(R.drawable.small_gitl_icon);
     }
 
     private void boyMode() {
@@ -83,5 +87,6 @@ public class TipsActivity extends FragmentActivity {
         tvTitle.setTextColor(color);
         tvNumber.setTextColor(color);
         line.setBackgroundColor(color);
+        imgIcon.setImageResource(R.drawable.small_boy_icon);
     }
 }

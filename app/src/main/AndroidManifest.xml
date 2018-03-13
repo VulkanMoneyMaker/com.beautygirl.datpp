@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dareaakq.naaq">
+    package="com.daetsoooe.naaq">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".SplashScreen"
+            android:name="com.daetsoooe.naaq.SplashScreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +27,7 @@
 
         </activity>
 
-        <activity android:name=".OpeningLaunchScreen"
+        <activity android:name="com.daetsoooe.naaq.OpeningLaunchScreen"
             android:screenOrientation="portrait">
 
             <intent-filter>
@@ -37,17 +37,17 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="hteksx.com"
-                    android:pathPrefix="/htrekc"
-                    android:scheme="rwdzxc" />
+                    android:host="bfdlerw.com"
+                    android:pathPrefix="/gmzxds"
+                    android:scheme="dseqwk" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name="com.dareaakq.naaq.TutorialActivity"
+            android:name="com.daetsoooe.naaq.TutorialActivity"
             android:screenOrientation="portrait" />
 
-        <activity android:name=".tips.TipsActivity"
+        <activity android:name="com.daetsoooe.naaq.tips.TipsActivity"
             android:screenOrientation="portrait"/>
 
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>

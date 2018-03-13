@@ -1,4 +1,4 @@
-package com.dareaakq.naaq;
+package com.daetsoooe.naaq;
 
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceResponse;

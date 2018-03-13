@@ -1,4 +1,4 @@
-package com.dareaakq.naaq;
+package com.daetsoooe.naaq;
 
 import android.content.Context;
 import android.content.Intent;

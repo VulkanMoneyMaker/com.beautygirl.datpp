@@ -1,4 +1,4 @@
-package com.dareaakq.naaq.tips;
+package com.daetsoooe.naaq.tips;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.dareaakq.naaq.R;
-import com.dareaakq.naaq.TutorialActivity;
+import com.daetsoooe.naaq.R;
+import com.daetsoooe.naaq.TutorialActivity;
 
 
 public class ScreenSlidePageFragment extends Fragment {
