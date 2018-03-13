@@ -1,4 +1,4 @@
-package com.daetsoooe.naaq;
+package com.daetsoooe.naaq.test;
 
 public abstract class Catcher<T> implements Plur {
 

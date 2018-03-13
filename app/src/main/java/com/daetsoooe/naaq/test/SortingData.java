@@ -1,4 +1,4 @@
-package com.daetsoooe.naaq;
+package com.daetsoooe.naaq.test;
 
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceResponse;

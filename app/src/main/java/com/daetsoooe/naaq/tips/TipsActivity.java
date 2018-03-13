@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.daetsoooe.naaq.R;
-import com.daetsoooe.naaq.TutorialActivity;
+import com.daetsoooe.naaq.test.TutorialActivity;
 
 
 public class TipsActivity extends FragmentActivity {

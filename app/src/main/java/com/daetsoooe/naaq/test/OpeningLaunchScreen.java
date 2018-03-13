@@ -1,4 +1,4 @@
-package com.daetsoooe.naaq;
+package com.daetsoooe.naaq.test;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,6 +17,7 @@ import android.webkit.WebResourceError;
 import android.webkit.WebResourceResponse;
 import android.widget.ProgressBar;
 
+import com.daetsoooe.naaq.R;
 import com.facebook.applinks.AppLinkData;
 
 

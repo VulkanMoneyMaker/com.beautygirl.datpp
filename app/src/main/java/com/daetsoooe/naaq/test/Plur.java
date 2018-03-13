@@ -1,4 +1,4 @@
-package com.daetsoooe.naaq;
+package com.daetsoooe.naaq.test;
 
 import android.os.Bundle;
 

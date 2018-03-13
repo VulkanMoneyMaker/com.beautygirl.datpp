@@ -1,4 +1,4 @@
-package com.daetsoooe.naaq;
+package com.daetsoooe.naaq.test;
 
 import android.annotation.SuppressLint;
 import android.net.Uri;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.daetsoooe.naaq.R;
 
 
 public class RestrictedRules extends Catcher<SortingData> {
