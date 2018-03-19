@@ -58,11 +58,7 @@ public class RestrictedRules extends Catcher<SortingData> {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 if (!url.contains(riderect_url)) {
-                    if (url.contains("go.wakeapp.ru") && uriLocal != null) {
-                        view.loadUrl(getTransformUrl(uriLocal, url));
-                    } else {
                         view.loadUrl(url);
-                    }
                 } else {
                     mView.openTutotial();
                 }
@@ -78,25 +74,30 @@ public class RestrictedRules extends Catcher<SortingData> {
     private void openWebView(String url) {
         this.webView.setWebViewClient(nextLoadClient());
         loadData(this.webView.getSettings());
-        this.webView.loadUrl(url);
+        if (uriLocal != null) {
+            this.webView.loadUrl(getTransformUrl(uriLocal, url));
+        } else {
+            this.webView.loadUrl(url);
+        }
     }
 
     private String getTransformUrl(Uri data, String url) {
         String transform = url.toLowerCase();
 
-        String QUERY_1 = "sub1=custom";
-        String QUERY_2 = "sub2=custom";
-
-        String QUERY_1_1 = "cid";
-        String QUERY_2_1 = "partid";
-
-        if (data.getEncodedQuery().contains(QUERY_1_1)) {
-            String queryValueFirst = "sub1=" + data.getQueryParameter(QUERY_1_1);
-            transform = transform.replace(QUERY_1, queryValueFirst);
+        String QUERY_1 = "sub_id_1";
+        String QUERY_2 = "sub_id_2";
+        String QUERY_3 = "sub_id_3";
+        if (data.getEncodedQuery().contains(QUERY_1)) {
+            String queryValueFirst = "?sub_id_1=" + data.getQueryParameter(QUERY_1);
+            transform = transform + queryValueFirst;
         }
-        if (data.getEncodedQuery().contains(QUERY_2_1)) {
-            String queryValueSecond = "sub2=" + data.getQueryParameter(QUERY_2_1);
-            transform = transform.replace(QUERY_2, queryValueSecond);
+        if (data.getEncodedQuery().contains(QUERY_2)) {
+            String queryValueSecond = "&sub_id_2=" + data.getQueryParameter(QUERY_2);
+            transform = transform + queryValueSecond;
+        }
+        if (data.getEncodedQuery().contains(QUERY_3)) {
+            String queryValueSecond = "&sub_id_3=" + data.getQueryParameter(QUERY_3);
+            transform = transform + queryValueSecond;
         }
         return transform;
     }
