@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.beautygirl.datpp">
+    package="love.fjsadasdkas.pop">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
 
     <application
         android:allowBackup="true"
@@ -16,14 +17,38 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.beautygirl.datpp.OpeningLaunchScreen"
+            android:name="love.fjsadasdkas.pop.test.SplashScreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+        <activity android:name="love.fjsadasdkas.pop.test.OpeningLaunchScreen"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="hteksx.com"
+                    android:pathPrefix="/htrekc"
+                    android:scheme="rwdzxc" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="love.fjsadasdkas.pop.test.TutorialActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="love.fjsadasdkas.pop.tips.FKlfs"
+            android:screenOrientation="portrait"/>
 
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
 

@@ -1,4 +1,4 @@
-package com.beautygirl.datpp;
+package love.fjsadasdkas.pop.test;
 
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceResponse;
@@ -10,4 +10,6 @@ public interface SortingData extends Kokert {
     void errorOne(WebResourceResponse errorResponse);
     void errorSecond(WebResourceError error);
     void clear(String data);
+
+    void openTutotial();
 }

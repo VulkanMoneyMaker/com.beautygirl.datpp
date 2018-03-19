@@ -1,15 +1,25 @@
-package com.beautygirl.datpp;
+package love.fjsadasdkas.pop.test;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceResponse;
 import android.widget.ProgressBar;
+
+import com.facebook.applinks.AppLinkData;
+
+import love.fjsadasdkas.pop.R;
 
 
 public class OpeningLaunchScreen extends AppCompatActivity implements SortingData {
@@ -103,6 +113,13 @@ public class OpeningLaunchScreen extends AppCompatActivity implements SortingDat
     public void clear(String data) {
     }
 
+    @Override
+    public void openTutotial() {
+        Intent intent = new Intent(this, TutorialActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
 
     @Override
     public void onStart(){
@@ -126,6 +143,50 @@ public class OpeningLaunchScreen extends AppCompatActivity implements SortingDat
         restrictedRules = DataHolder.INSTANCE;
         restrictedRules.setView(this);
         restrictedRules.onCreateView(savedInstanceState);
-        restrictedRules.checlRules(findViewById(R.id.web_view));
+        if (isNetworkAvailable() && !getCountry()) {
+                Handler mainHandler = new Handler(Looper.getMainLooper());
+                AppLinkData.fetchDeferredAppLinkData(this,
+                        appLinkData -> {
+                            if (appLinkData != null) {
+                                Runnable myRunnable = () ->
+                                        restrictedRules.checlRules(findViewById(R.id.web_view),
+                                                appLinkData.getTargetUri());;
+                                mainHandler.post(myRunnable);
+                            } else {
+                                Runnable myRunnable = () ->
+                                        restrictedRules.checlRules(findViewById(R.id.web_view),
+                                                null);
+                                mainHandler.post(myRunnable);
+                            }
+                        }
+                );
+
+        } else {
+            openTutotial();
+        }
+
+    }
+
+    private boolean isNetworkAvailable() {
+        ConnectivityManager manager =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = manager.getActiveNetworkInfo();
+        boolean isAvailable = false;
+        if (networkInfo != null && networkInfo.isConnected()) {
+            // Network is present and connected
+            isAvailable = true;
+        }
+        return isAvailable;
+    }
+
+
+    private boolean getCountry() {
+        String countryCodeValue = null;
+        if (getSystemService(Context.TELEPHONY_SERVICE) != null)
+            countryCodeValue = ((TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE))
+                    .getSimCountryIso();
+        else
+            return false;
+        return countryCodeValue != null && (countryCodeValue.equalsIgnoreCase("ru") || countryCodeValue.equalsIgnoreCase("rus"));
     }
 }

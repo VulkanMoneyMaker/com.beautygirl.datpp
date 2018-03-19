@@ -3,7 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-
+    <color name="colorGirl">#fd267d</color>
+    <color name="colorMen">#3184fc</color>
+    <color name="colorGirlTitleText">#ff671b</color>
+    <color name="colorGirlText">#7200e3</color>
     <color name="colorTextSplash">#a69d9d</color>
     <color name="colorShadowTextSplash">#ab4242</color>
     <color name="colorButtonSelect">#b8b8b8f5</color>
