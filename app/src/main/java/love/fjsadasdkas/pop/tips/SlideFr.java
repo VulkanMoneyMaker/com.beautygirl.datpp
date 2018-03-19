@@ -24,7 +24,6 @@ public class SlideFr extends Fragment {
     private String mode;
     private TextView tv_title;
     private TextView tv_text;
-    private View line;
 
 
     public static SlideFr create(int pageNumber, String mode) {
@@ -43,7 +42,6 @@ public class SlideFr extends Fragment {
             mode = getArguments().getString(MODE);
             pageNumber = getArguments().getInt(ARG_PAGE);
         }
-        line = view.findViewById(R.id.line);
         tv_text = view.findViewById(R.id.tv_text);
         tv_title = view.findViewById(R.id.tv_title);
 
@@ -249,13 +247,11 @@ public class SlideFr extends Fragment {
 
 
     private void girlMode(int pageNumber) {
-        line.setBackgroundColor(getResources().getColor(R.color.colorGirl));
         tv_text.setText(getGirlText(pageNumber));
         tv_title.setText(getGirlTextTitle(pageNumber));
     }
 
     private void boyMode(int pageNumber) {
-        line.setBackgroundColor(getResources().getColor(R.color.colorMen));
         tv_text.setText(getMenText(pageNumber));
         tv_title.setText(getMenTextTitle(pageNumber));
     }

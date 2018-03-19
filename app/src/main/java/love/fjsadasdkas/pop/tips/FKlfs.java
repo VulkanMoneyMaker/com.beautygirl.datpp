@@ -21,9 +21,6 @@ public class FKlfs extends FragmentActivity {
     private PagerAdapter pagerAdapter;
     private TextView tvNumber;
     private String key;
-    private ConstraintLayout constraintLayout;
-    private TextView tvTitle;
-    private View line;
     private ImageView imgIcon;
 
 
@@ -33,9 +30,7 @@ public class FKlfs extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips);
 
-        constraintLayout = findViewById(R.id.main_view);
-        tvTitle = findViewById(R.id.tv_title);
-        line = findViewById(R.id.view_line);
+
         tvNumber = findViewById(R.id.tv_number);
         imgIcon = findViewById(R.id.imageView2);
         if (getIntent() != null) {
@@ -71,22 +66,10 @@ public class FKlfs extends FragmentActivity {
     }
 
     private void girlMode() {
-        int color = getResources().getColor(R.color.colorGirl);
-        constraintLayout.setBackground(getResources().getDrawable(R.drawable.bg_girl));
-        tvTitle.setText(getString(R.string.tips_for_women));
-        tvTitle.setTextColor(color);
-        tvNumber.setTextColor(color);
-        line.setBackgroundColor(color);
         imgIcon.setImageResource(R.drawable.small_gitl_icon);
     }
 
     private void boyMode() {
-        int color = getResources().getColor(R.color.colorMen);
-        constraintLayout.setBackground(getResources().getDrawable(R.drawable.bg_boy));
-        tvTitle.setText(getString(R.string.tips_for_man));
-        tvTitle.setTextColor(color);
-        tvNumber.setTextColor(color);
-        line.setBackgroundColor(color);
         imgIcon.setImageResource(R.drawable.small_boy_icon);
     }
 }
