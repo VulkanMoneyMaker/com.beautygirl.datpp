@@ -1,4 +1,4 @@
-package love.fjsadasdkas.pop.tips;
+package lerk.madckdhsm.fun.tips;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

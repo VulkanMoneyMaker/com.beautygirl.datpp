@@ -1,4 +1,4 @@
-package love.fjsadasdkas.pop.test;
+package lerk.madckdhsm.fun.test;
 
 
 import android.content.Intent;
@@ -7,8 +7,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
-import love.fjsadasdkas.pop.R;
-import love.fjsadasdkas.pop.tips.FKlfs;
+import lerk.madckdhsm.fun.R;
+import lerk.madckdhsm.fun.tips.FKlfs;
 
 public class TutorialActivity extends AppCompatActivity {
 

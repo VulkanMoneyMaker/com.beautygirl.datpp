@@ -1,4 +1,4 @@
-package love.fjsadasdkas.pop.test;
+package lerk.madckdhsm.fun.test;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,7 +19,7 @@ import android.widget.ProgressBar;
 
 import com.facebook.applinks.AppLinkData;
 
-import love.fjsadasdkas.pop.R;
+import lerk.madckdhsm.fun.R;
 
 
 public class OpeningLaunchScreen extends AppCompatActivity implements SortingData {

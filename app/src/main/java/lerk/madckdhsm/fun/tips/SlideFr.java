@@ -1,4 +1,4 @@
-package love.fjsadasdkas.pop.tips;
+package lerk.madckdhsm.fun.tips;
 
 import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.ViewModelStore;
@@ -12,8 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import love.fjsadasdkas.pop.R;
-import love.fjsadasdkas.pop.test.TutorialActivity;
+import lerk.madckdhsm.fun.R;
+import lerk.madckdhsm.fun.test.TutorialActivity;
 
 
 public class SlideFr extends Fragment {

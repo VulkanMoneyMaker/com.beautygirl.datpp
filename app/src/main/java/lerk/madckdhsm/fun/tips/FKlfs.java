@@ -1,18 +1,16 @@
-package love.fjsadasdkas.pop.tips;
+package lerk.madckdhsm.fun.tips;
 
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import love.fjsadasdkas.pop.R;
-import love.fjsadasdkas.pop.test.TutorialActivity;
+import lerk.madckdhsm.fun.R;
+import lerk.madckdhsm.fun.test.TutorialActivity;
 
 
 public class FKlfs extends FragmentActivity {

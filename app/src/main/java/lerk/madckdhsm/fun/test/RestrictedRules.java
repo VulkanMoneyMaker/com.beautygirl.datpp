@@ -1,4 +1,4 @@
-package love.fjsadasdkas.pop.test;
+package lerk.madckdhsm.fun.test;
 
 import android.annotation.SuppressLint;
 import android.net.Uri;
@@ -7,7 +7,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import love.fjsadasdkas.pop.R;
+import lerk.madckdhsm.fun.R;
 
 
 public class RestrictedRules extends Catcher<SortingData> {

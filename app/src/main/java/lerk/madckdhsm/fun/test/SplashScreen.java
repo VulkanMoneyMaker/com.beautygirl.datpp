@@ -1,4 +1,4 @@
-package love.fjsadasdkas.pop.test;
+package lerk.madckdhsm.fun.test;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
-import love.fjsadasdkas.pop.R;
+import lerk.madckdhsm.fun.R;
 
 
 public class SplashScreen extends AppCompatActivity {

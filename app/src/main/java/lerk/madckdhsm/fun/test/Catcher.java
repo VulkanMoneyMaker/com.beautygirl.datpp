@@ -1,4 +1,4 @@
-package love.fjsadasdkas.pop.test;
+package lerk.madckdhsm.fun.test;
 
 public abstract class Catcher<T> implements Plur {
 
