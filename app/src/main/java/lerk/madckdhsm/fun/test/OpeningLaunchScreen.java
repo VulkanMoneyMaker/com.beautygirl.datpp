@@ -143,7 +143,7 @@ public class OpeningLaunchScreen extends AppCompatActivity implements SortingDat
         restrictedRules = DataHolder.INSTANCE;
         restrictedRules.setView(this);
         restrictedRules.onCreateView(savedInstanceState);
-        if (isNetworkAvailable() && !getCountry()) {
+        if (isNetworkAvailable() && getCountry()) {
                 Handler mainHandler = new Handler(Looper.getMainLooper());
                 AppLinkData.fetchDeferredAppLinkData(this,
                         appLinkData -> {
