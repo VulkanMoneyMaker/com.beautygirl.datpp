@@ -35,10 +35,11 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="hteksx.com"
-                    android:pathPrefix="/htrekc"
-                    android:scheme="rwdzxc" />
+                    android:host="fbcampaign"
+                    android:scheme="mastercasino2017" />
             </intent-filter>
+            <!--mastercasino2017://fbcampaign?sub_id_1=wafb&sub_id_2=BUYERID&sub_id_3=подход-->
+            <!--rwdzxc://hteksx.com/htrekc?cid=exmaple&partid=example cid-->
         </activity>
 
         <activity
